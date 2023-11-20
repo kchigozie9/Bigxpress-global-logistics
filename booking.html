@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boarding Form</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #f50d0d;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #FF0000;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+.caution {
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Boarding Form</h1>
+  <form action="index.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="departure">Departure</label>
+      <input type="text" class="form-control" id="departure" name="departure" value="Zone 5 Abuja Copper House" required>
+    </div>
+    <div class="form-group">
+      <label for="destination">Destination</label>
+      <input type="text" class="form-control" id="destination" name="destination" value="Lagos Ojota, Lagos Jibowu" required>
+    </div>
+    <div class="form-group">
+      <label for="vehicle">Vehicle</label>
+      <select class="form-control" id="vehicle" name="vehicle">
+        <option value="Car">Car</option>
+        <option value="Bus">Bus</option>
+        <option value="Train">Train</option>
+        <option value="Plane">Plane</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" class="form-control" id="price" name="price" value="20000" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="seats">Seats</label>
+      <input type="number" class="form-control" id="seats" name="seats" min="1" max="6" required>
+    </div>
+    <div class="form-group">
+      <label for="account_number">Account Number: 2089214365</label>
+      
+    </div>
+    <div class="form-group">
+      <label for="bank">Bank: UBA BANK</label>
+      
+    </div>
+    <div class="form-group">
+  <label for="name">Name:Kalu Vincent</label>
+  
+</div>
+</div>
+
+    <div class="form-group">
+      <label for="proof_of_payment">Proof of Payment</label>
+      <input type="file" class="form-control" id="proof_of_payment" name="proof_of_payment" required>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+  <div class="caution">
+    <p>The vehicle will not move until there are 5 passengers.</p>
+  </div>
+</div>
+</body>
+</html>
